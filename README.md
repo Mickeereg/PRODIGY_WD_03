@@ -3,11 +3,11 @@
 This project implements a classic Tic-Tac-Toe game playable in the browser. It supports two game modes: user vs user and user vs CPU (computer). The CPU difficulty can be adjusted between easy, medium, and hard levels.
 
 # Features
-User vs User Mode: Play against another player on the same device.
-User vs CPU Mode: Challenge the computer with adjustable difficulty levels.
-Responsive Design: Enjoy the game on different screen sizes, from desktops to mobile devices.
-Game Restart: Easily restart the game with a button click.
-Score Tracking: Keep track of wins for both players (X and O).
+. User vs User Mode: Play against another player on the same device.
+. User vs CPU Mode: Challenge the computer with adjustable difficulty levels.
+. Responsive Design: Enjoy the game on different screen sizes, from desktops to mobile devices.
+. Game Restart: Easily restart the game with a button click.
+. Score Tracking: Keep track of wins for both players (X and O).
 # Technologies Used
 HTML5
 CSS3
