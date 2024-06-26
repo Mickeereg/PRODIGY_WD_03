@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="players">
+            <div class="player">
+                <h2>Player 1</h2>
+                <div class="player__symbol">X</div>
+                <div class="score" id="scoreX">0</div>
+            </div>
+            <div class="player">
+                <h2>Player 2</h2>
+                <div class="player__symbol">O</div>
+                <div class="score" id="scoreO">0</div>
+            </div>
+        </div>
+        <div class="board-container">
+            <div class="board">
+                <button class="board__cell" data-cell-index="0"></button>
+                <button class="board__cell" data-cell-index="1"></button>
+                <button class="board__cell" data-cell-index="2"></button>
+                <button class="board__cell" data-cell-index="3"></button>
+                <button class="board__cell" data-cell-index="4"></button>
+                <button class="board__cell" data-cell-index="5"></button>
+                <button class="board__cell" data-cell-index="6"></button>
+                <button class="board__cell" data-cell-index="7"></button>
+                <button class="board__cell" data-cell-index="8"></button>
+            </div>
+        </div>
+
+        <button class="game-restart-btn">Restart Game</button>
+        <button class="back-btn">Back</button>
+        <div class="popup hide">
+            <p id="message">Sample Message</p>
+            <button class="popup__restart-btn">New Game</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game Modes</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Tic-Tac-Toe</h1>
+        <h2>Select Game Mode</h2>
+        <div class="game-modes">
+            <button onclick="selectMode('user-vs-user')">User vs User</button>
+            <button onclick="showDifficultyOptions()">User vs CPU</button>
+        </div>
+        <div class="difficulty-modes hide">
+            <h2>Select Difficulty</h2>
+            <button onclick="selectMode('user-vs-cpu', 'easy')">Easy</button>
+            <button onclick="selectMode('user-vs-cpu', 'medium')">Medium</button>
+            <button onclick="selectMode('user-vs-cpu', 'hard')">Hard</button>
+            <button onclick="hideDifficultyOptions()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        function selectMode(mode, difficulty) {
+            let url = 'game.html?mode=' + mode;
+            if (difficulty) {
+                url += '&difficulty=' + difficulty;
+            }
+            window.location.href = url;
+        }
+
+        function showDifficultyOptions() {
+            document.querySelector('.game-modes').classList.add('hide');
+            document.querySelector('.difficulty-modes').classList.remove('hide');
+        }
+
+        function hideDifficultyOptions() {
+            document.querySelector('.game-modes').classList.remove('hide');
+            document.querySelector('.difficulty-modes').classList.add('hide');
+        }
+    </script>
+</body>
+
+</html>

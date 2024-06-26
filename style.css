@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(48, 73, 122);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    font-size: 65px;
+    color: rgb(255, 255, 255);    
+}
+h2 {
+    color:rgb(249, 249, 249)
+}
+.players {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.player {
+    text-align: center;
+}
+
+.player__symbol {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: rgb(247, 247, 247);
+}
+
+.score {
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+
+.board-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.board__cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 45, 45);
+}
+
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #446e89;
+}
+
+.game-restart-btn, .back-btn, .popup__restart-btn {
+    font-size: 1em;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(98, 120, 159);
+    padding: 20px;
+    border: 1px solid #a67474;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.game-modes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.game-modes button {
+    padding: 5px 10px; 
+    font-size: 1.2em; 
+}
+
+.difficulty-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.difficulty-levels button {
+    padding: 5px 10px; 
+    font-size: 0.8em; 
+}
+
+.board.win {
+    background-color: green;
+}
+
+.board.lose {
+    background-color: red;
+}
