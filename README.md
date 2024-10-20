@@ -1,4 +1,3 @@
-# PRODIGY_WD_03
 # Tic-Tac-Toe Game
 This project implements a classic Tic-Tac-Toe game playable in the browser. It supports two game modes: user vs user and user vs CPU (computer). The CPU difficulty can be adjusted between easy, medium, and hard levels.
 
